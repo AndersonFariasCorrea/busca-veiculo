@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.employee.model.User;
-import com.example.employee.service.UserService;
+import com.example.comissao.model.User;
+import com.example.comissao.service.UserService;
 
 @RestController
 @RequestMapping("/api")
@@ -18,7 +18,7 @@ public class UserController {
     UserService userService;
 
     @RequestMapping(value="/users", method=RequestMethod.POST)
-    public User createEmployee(@RequestBody User user) {
-        return userService.createEmployee(user);
+    public User createComissao(@RequestBody User user) {
+        return userService.createComissao(user);
     }
 }
