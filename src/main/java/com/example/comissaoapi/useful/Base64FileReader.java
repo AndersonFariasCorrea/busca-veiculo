@@ -29,7 +29,7 @@ public class Base64FileReader {
             } else if (this.docType.equalsIgnoreCase("xlsx")) {
                 return readExcel(byteArrayInputStream);
             } else {
-                throw new IllegalArgumentException("Unsupported document type: " + this.docType);
+                throw new IllegalArgumentException("Tipo de arquivo não suportado: " + this.docType);
             }
         }
     }
@@ -80,7 +80,7 @@ public class Base64FileReader {
                                 cells.add(cell.getCellFormula());
                                 break;
                             default:
-                                cells.add("Unknown Value");
+                                cells.add("");
                                 break;
                         }
                     }

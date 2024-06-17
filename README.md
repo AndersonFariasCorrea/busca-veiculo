@@ -1,4 +1,4 @@
-## Setting stuff
+## Setting stuff (built to Windows)
 ### Setting container
 After getting docker installed in whatever OS u'r running.
 Go to database-docker directory and run `docker-compose up -d` to set up container `up`, `-d` let u use the same terminal.

@@ -8,6 +8,8 @@ public class CarModelDTO {
     private String conteudo;
     private Float preco_nacional;
     private Float preco_zfm;
+    private Float preco_ao;
+    private Float preco_alc;
 
     public Long getId() {
         return id;
@@ -56,6 +58,18 @@ public class CarModelDTO {
     }
     public void setPreco_zfm(Float preco_zfm) {
         this.preco_zfm = preco_zfm;
+    }
+    public Float getPreco_ao() {
+        return preco_ao;
+    }
+    public void setPreco_ao(Float preco_ao) {
+        this.preco_ao = preco_ao;
+    }
+    public Float getPreco_alc() {
+        return preco_alc;
+    }
+    public void setPreco_alc(Float preco_alc) {
+        this.preco_alc = preco_alc;
     }
 }
 
