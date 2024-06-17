@@ -8,5 +8,5 @@ import java.util.List;
 @Repository
 public interface CarModelRepository extends JpaRepository<CarModel, Long> {
     List<CarModel> findByModel(String model);
-    List<CarModel> findByModelContaining(String model);
+    List<CarModel> findByModelContainingIgnoreCase(String model);
 }

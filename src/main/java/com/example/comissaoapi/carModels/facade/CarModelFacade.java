@@ -67,7 +67,7 @@ public class CarModelFacade {
     }
 
     public List<CarModelDTO> getByModel(String model) {
-        return repository.findByModel(model).stream().map(this::converter).collect(Collectors.toList());
+        return repository.findByModelContainingIgnoreCase(model).stream().map(this::converter).collect(Collectors.toList());
     }
 
     public String delete(Long carModelId) {
