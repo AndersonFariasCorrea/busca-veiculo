@@ -1,4 +1,4 @@
-## Configurando as Coisas (feito para Windows)
+## Configurando as ambiente (feito para Windows)
 ### Configurando o Container
 Após instalar o Docker no seu sistema operacional.
 Vá no diretório `database-docker` e execute `docker-compose up -d` para iniciar o container, `-d` te deixa usar o mesmo terminal.
