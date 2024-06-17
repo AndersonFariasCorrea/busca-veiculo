@@ -1,0 +1,5 @@
+# curl --location --request DELETE 'localhost:8080/carModel/121'
+DELETE localhost:8080/carModel/{{modeloId}}
+
+###
+

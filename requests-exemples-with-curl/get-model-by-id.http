@@ -1,0 +1,5 @@
+# curl --location 'localhost:8080/carModel/122'
+GET localhost:8080/carModel/{{modeloId}}}}
+
+###
+

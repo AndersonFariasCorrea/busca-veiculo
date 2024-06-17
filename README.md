@@ -1,10 +1,36 @@
-## Setting stuff (built to Windows)
-### Setting container
-After getting docker installed in whatever OS u'r running.
-Go to database-docker directory and run `docker-compose up -d` to set up container `up`, `-d` let u use the same terminal.
+## Configurando as Coisas (feito para Windows)
+### Configurando o Container
+Após instalar o Docker no seu sistema operacional.
+Vá no diretório `database-docker` e execute `docker-compose up -d` para iniciar o container, `-d` te deixa usar o mesmo terminal.
 
-### Setting database (Postgres sql)
-Use the tables.sql located in Miscellaneous it's a postgres script to create the table from whatever db manger u wish.
+### Configurando o Banco de Dados (Postgres SQL)
+Utilize o arquivo init.sql localizado em `database-docker`, é um script do PostgreSQL para criar as tabelas no gerenciador de banco de dados que você preferir.
 
-### Miscellaneous  stuff
-Don't forget to load Maven dependencies, dummy.
+### Outros
+Não se esqueça de carregar as dependências do Maven.
+
+
+-----
+## Endpoints
+#### GET - /carModel
+Lista todos os modelos.
+
+#### GET - /carModel/model/{nome_modelo}
+Busca pelo nome de uma modelo sem case match podendo ser parte do nome.
+
+#### POST - /carModel
+Para upload de arquivo
+params: fileType -> String (xlsx), fileBase64 -> String Base64 do arquivo.
+
+#### PUT - /carModel
+Atualiza modelo
+
+#### DELEETE - /carModel/{id_modelo}
+Deleta modelo
+
+-----
+
+
+
+
+

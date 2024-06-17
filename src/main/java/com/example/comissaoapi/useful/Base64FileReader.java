@@ -24,9 +24,7 @@ public class Base64FileReader {
         byte[] decodedBytes = Base64.getDecoder().decode(this.base64EncodedFile);
 
         try (ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(decodedBytes)) {
-            if (this.docType.equalsIgnoreCase("pdf")) {
-                return readPdf(byteArrayInputStream);
-            } else if (this.docType.equalsIgnoreCase("xlsx")) {
+            if (this.docType.equalsIgnoreCase("xlsx")) {
                 return readExcel(byteArrayInputStream);
             } else {
                 throw new IllegalArgumentException("Tipo de arquivo não suportado: " + this.docType);

@@ -145,8 +145,9 @@ public class CarModelAPI {
 
     @PutMapping("/{carModelId}")
     @ResponseBody
-    public void update(@PathVariable("carModelId") Long carModelId, @RequestBody CarModelDTO carModelDTO) {
+    public CarModelDTO update(@PathVariable("carModelId") Long carModelId, @RequestBody CarModelDTO carModelDTO) {
         carModelFacade.atualizar(carModelDTO, carModelId);
+        return carModelDTO;
     }
 
     @GetMapping
